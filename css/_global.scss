@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Graphik LC TT';
+    src: url('../Graphik-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+$main-color: #fff;
+$accent-color: #FF6336;
+$additional-color: #FF9C7D;
+$secondary-color: #000;
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: normal;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem;
+}
+
+.wrapper {
+    @include flex(column, center, center);
+}

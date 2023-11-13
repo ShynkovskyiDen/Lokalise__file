@@ -1,0 +1,46 @@
+
+// Header
+.header {
+    @include flex(row, center, center);
+    width: 100%;
+    border-bottom: 1px solid rgb(167, 167, 167);
+    .header__container {
+    @include flex(row, center, center);
+        width: 100%;
+        padding: 0 3.54%;
+        .nav__block {
+        @include flex(row, space-between, center);
+            margin: 0 21% 0 3.54%;
+            gap: 42px;
+            .nav__link {
+                color: $secondary-color;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .button__block {
+    @include flex(row, center, center);
+        gap: 10px;
+        margin: 25px 0;
+        .button__item:hover {
+            cursor: pointer;
+            transform: scale(1.02);
+            opacity: 0.7;
+        }
+        .button__item {
+            line-height: 45px;
+            padding: 0 36px;
+            border: 1px solid rgba(0, 0, 0, 0.50);
+            font-weight: 600;
+        }
+        .button__item:last-child {
+            padding: 0 22px;
+            font-weight: 600;
+            border: 1px solid $accent-color;
+            background-color: $accent-color;
+            color: $main-color;
+        }
+    }
+}

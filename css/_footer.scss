@@ -1,0 +1,87 @@
+// Footer
+
+.footer {
+    @include flex(column, center, center);
+    padding: 92px 5.2% 43px;
+    background-color: #EEEEEE;
+    width: 100%;
+}
+
+.footer__container {
+    @include flex(column, center, center);
+    .footer__block {
+    @include flex(row, space-between, flex-start);
+    border-bottom: 1px solid #000;
+    padding-bottom: 95px;
+        .studies__block {
+        @include flex(column, center, flex-start);
+        gap: 15px;
+        width: 27.8%;
+            .studies__heading {
+            font-size: 2.5rem;
+            font-weight: 600;
+            line-height: 50px;
+            }
+            .studies__info {
+            width: 80%;
+            font-size: 1.25rem;
+            line-height: 30px;
+            }
+            .studies__link {
+            font-size: 1.25rem;
+            line-height: 30px;
+            font-weight: 600;
+            color: $secondary-color;
+            }
+            .studies__link:hover {
+            color: $accent-color;
+            }
+        }
+        .categories__container {
+        @include flex(row, space-around, flex-start);
+        width: 72%;
+        gap: 15px;
+            .categories__block {
+            @include flex(column, center, flex-start);
+                width: 15%;
+                gap: 15px;
+                .categories__heading {
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    line-height: 25px;
+                }
+                .categories__link {
+                    font-size: 0.935rem;
+                    line-height: 15px;
+                    color: $secondary-color;
+                }
+                .categories__link:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .footer__block--add {
+        @include flex(row, space-between, flex-start);
+        width: 100%;
+        padding: 48px 0;
+        .sign__item {
+        @include flex(row, center, flex-start);
+            width: 31.86%;
+            gap: 14px;
+            .sign__info {
+                display: block;
+                font-size: 0.75rem;
+                line-height: 15px;
+            }
+        }
+        .rights__item {
+        @include flex(column, center, flex-start);
+            span & {
+            display: block;
+            font-size: 0.75rem;
+            line-height: 15px;
+            }
+        }
+    }
+}
