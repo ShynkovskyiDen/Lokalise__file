@@ -39,9 +39,14 @@ body {
 }
 .main .text__special {
   text-decoration: underline;
+  color: #000;
+}
+.main .text__special:hover {
+  text-decoration: none;
+  color: #FF6336;
 }
 
-.content__block {
+.info__block {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -49,31 +54,31 @@ body {
   margin: 97px 0 145px 0;
   padding: 0 5.2%;
 }
-.content__block .info__block {
+.info__block .info__item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 51px;
 }
-.content__block .info__block .info__heading {
+.info__block .info__item .info__heading {
   font-weight: 600;
   font-size: 4rem;
   line-height: 70px;
 }
-.content__block .info__block .info__desc {
+.info__block .info__item .info__desc {
   width: 70%;
   font-size: 1.56rem;
   line-height: 35px;
 }
-.content__block .info__block .button__block {
+.info__block .info__item .button__block {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   gap: 10px;
 }
-.content__block .info__block .button__block .general__btn {
+.info__block .info__item .button__block .general__btn {
   font-size: 1rem;
   line-height: 60px;
   width: 160px;
@@ -82,17 +87,17 @@ body {
   color: #fff;
   border: 1px solid #FF6336;
 }
-.content__block .info__block .button__block .general__btn:last-of-type {
+.info__block .info__item .button__block .general__btn:last-of-type {
   color: #000;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
-.content__block .info__block .button__block .general__btn:hover {
+.info__block .info__item .button__block .general__btn:hover {
   cursor: pointer;
   transform: scale(1.02);
   opacity: 0.7;
 }
-.content__block .info__block .button__block .info__point {
+.info__block .info__item .button__block .info__point {
   display: block;
   padding-top: 25px;
   font-size: 0.93rem;
@@ -125,6 +130,7 @@ body {
 .company__block .company__list .company__item:hover {
   transform: scale(1.1);
   cursor: pointer;
+  transition: all 1s;
 }
 
 .benefits__container {
